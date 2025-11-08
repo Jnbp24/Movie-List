@@ -1,0 +1,7 @@
+include includes/header
+body
+    h1 Movie List 
+    form(action="/movies/search", method="get")
+        input(type="text", name="searchQuery", placeholder = "Search for movie", required)
+        button(type="submit") Search 
+    div#Results 

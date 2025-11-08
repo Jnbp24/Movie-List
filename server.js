@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { request, response } from 'express';
 import movieRouter from './routes/movies.js'
 
 
@@ -13,6 +13,14 @@ app.use(express.static('assets'));
 
 app.use("/movies", movieRouter);
 
+app.get('/', (request, response) => { // Redirect empty url to /home for better clarity
+    response.redirect('/home')
+})
+
+
+app.get('/home', (request, response) => {
+    response.render('homepage', {title: 'Movie List'})
+})
 
 
 app.listen(PORT, () =>{
