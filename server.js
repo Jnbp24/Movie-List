@@ -1,10 +1,12 @@
-import express, { request, response } from 'express';
+import express from 'express';
+import 'dotenv/config'; // automatically loads .env
 import movieRouter from './routes/movies.js'
 
 
 const app = express();
 const PORT = 8800
 app.set('view engine', 'pug');
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
