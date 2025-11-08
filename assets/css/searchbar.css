@@ -1,0 +1,40 @@
+/* Search form */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Input field */
+form input[type="text"] {
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 400px; 
+    border: none; 
+    border-radius: 50px 0 0 50px; 
+    outline: none;
+    background-color: #F5C518; /* IMDB gold */
+    color: #000; /* black text for contrast */
+}
+
+/* Placeholder text */
+form input[type="text"]::placeholder {
+    color: #000; /* black placeholder */
+    opacity: 1;  /* ensure fully visible in all browsers */
+}
+
+/* Button */
+form button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none; 
+    border-radius: 0 50px 50px 0; 
+    background-color: #F5C518; /* same IMDB gold */
+    color: #000; /* black text */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e0b50f; /* slightly darker gold on hover */
+}

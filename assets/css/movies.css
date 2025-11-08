@@ -1,0 +1,39 @@
+/* Movies container (grid layout) */
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;                /* spacing between movie cards */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;           /* center the grid container */
+    text-align: left;         /* movie card text left-aligned */
+}
+
+.movie {
+    background-color: #000;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* stack poster + text vertically */
+    align-items: flex-start; /* text left-aligned inside card */
+}
+/* Movie text */
+.movie h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.movie p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 350px;            /* fixed height for all posters */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;     
+    display: block;
+}

@@ -1,0 +1,8 @@
+/* Logo image */
+#Images img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+}

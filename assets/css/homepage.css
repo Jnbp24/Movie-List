@@ -1,0 +1,32 @@
+@import url('/css/movies.css');
+@import url('/css/searchbar.css');
+@import url('/css/image.css');
+@import url('/css/infoBar.css');
+/* Header section */
+#Header {
+    text-align: center;       /* centers h1, logo, and form */
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: block; /* default */
+    text-align: center; /* keeps header/form centered */
+}
+
+/* Header */
+header {
+    font-size: 2.5rem;
+    margin: 40px 0 20px 0;
+}
+
+/* Error message */
+p.error {
+    color: #ff5555;
+    font-weight: bold;
+}

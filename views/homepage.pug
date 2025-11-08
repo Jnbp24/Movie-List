@@ -1,7 +1,19 @@
 include includes/header
 body
-    h1 Movie List 
-    form(action="/movies/search", method="get")
-        input(type="text", name="searchQuery", placeholder = "Search for movie", required)
-        button(type="submit") Search 
-    div#Results 
+    #Header
+        #Images 
+            img(src="/images/IMDBLogo.png")
+        form(action="/movies/search", method="get")
+            input(type="text", name="searchQuery", placeholder = "Search for movie", required)
+            button(type="submit") Search
+    #InfoBar
+        button.login-btn Login
+        .dropdown
+            button.dropdown-btn Menu
+            .dropdown-content
+                a(href="#") Profile
+                a(href="#") Settings 
+                a(href="#") Logout 
+                a(href="#") Contact us 
+    #Movies  
+    include includes/convertJson
