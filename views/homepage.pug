@@ -5,9 +5,10 @@ body
             img(src="/images/IMDBLogo.png")
         form(action="/movies/search", method="get")
             input(type="text", name="searchQuery", placeholder = "Search for movie", required)
-            button(type="submit") Search
+            button(type="submit")
     #InfoBar
-        button.login-btn Login
+        a(href="/login/loginUser")
+            button.login-btn Login
         .dropdown
             button.dropdown-btn Menu
             .dropdown-content
@@ -15,5 +16,9 @@ body
                 a(href="#") Settings 
                 a(href="#") Logout 
                 a(href="#") Contact us 
+    #Results 
+        if searchQuery
+            h1 Search results 
+   
     #Movies  
     include includes/convertJson

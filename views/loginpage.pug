@@ -1,0 +1,19 @@
+include includes/header
+body
+    #LoginContainer 
+        h1 Login 
+        form(action="/login/loginUser", method="post")
+            label(for="username") Username or Email
+            input#username(type="text", name="username", placeholder="Enter your username or email", required)
+
+            label(for="password") Password
+            input#password(type="password", name="password", placeholder="Enter your password", required)
+
+            button(type="submit") Login
+
+            p 
+                a(href="/forgotPassword") Forgot password?
+
+        p 
+            | Don't have an account? 
+            a(href="/registerUser") Sign up
